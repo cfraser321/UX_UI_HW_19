@@ -1,0 +1,521 @@
+body {
+    margin: auto;
+    background-color: #0072D0;
+}
+
+header {
+    background-color: #08487D;
+    height: 200px;
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #f7f7f7;
+}
+
+@font-face {
+    font-family: 'Espresso Roast Caps';
+    src: url("fonts/EspressoRoast-Caps.woff2");
+    font-family: 'Espresso Roast Script';
+    src: url("fonts/EspressoRoast-Script.woff2");
+}
+
+h1 {
+    font-family: 'Espresso Roast Caps', sans-serif;
+    font-size: 62pt;
+    color: #f7f7f7;
+    margin-top: 0;
+    line-height: 105%;
+   }
+
+h2 {
+    font-family: 'Espresso Roast Script', sans-serif;
+    font-size: 60pt;
+    color: #f7f7f7;
+    margin-top: 0px;
+    line-height: 20%;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 54pt; 
+    color: #f7f7f7;
+    display: inline-block;
+    margin-left: 142px;
+    margin-right: 120px;
+    margin-bottom: -20px;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34pt; 
+    color: #08487D;
+    display: inline-block;
+    margin-left: 142px;
+    margin-right: 240px;
+    margin-bottom: -20px;
+}
+
+#logo {
+    vertical-align: top;
+    margin: 0px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 60px;
+    color: #f7f7f7;
+    width: 25%;
+   }
+
+.headerNav {
+    display: inline-block;
+    width: 100%;
+    padding-top: 0px;
+}
+
+.inlineBlock {
+    list-style: none;
+    color: #f7f7f7;
+    text-align: right;
+    
+}
+
+li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    margin-right: 60px;
+    margin-top: -50px;
+    font-size: 18pt;
+}
+
+.heroImg {
+    height: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+    background-color: #0072D0;
+    display: block;
+    width: 100%;
+    }
+
+#headShot {
+    display: inline-block;
+    width: 33%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 0px;
+    padding-bottom: 150px;
+}   
+
+.aboutMe {
+    display: inline-block;
+    height: 800px;
+    padding-top: 60px;
+    background-color: #025396;
+}
+
+#myName {
+    display: inline-block;
+    padding-left: 420px;
+    padding-top: 0px;
+    margin-top: -800px;
+    margin-bottom: 0px;
+    width: 66%;
+}
+
+p {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14pt; 
+    line-height: 150%;
+    margin-top: 40px;
+    margin-left: 142px;
+    margin-right: 142px;
+    color: #f7f7f7;
+  }
+  
+button {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+    color: #f7f7f7;
+    background-color: #0072D0; 
+    height: 60px;
+    width: 180px;
+    border-color: #f7f7f7;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 1200px;
+   align-content: right;
+    }
+
+
+#footer {
+    display: block;
+    background-color: #08487D;
+    height: 80px;
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #f7f7f7;
+}
+
+ul.footerNav {
+    display: inline-block;
+    padding-top: 0px;
+    background-color: #08487D;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footerLi {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 60px;
+    font-size: 18pt;
+    margin-bottom: 0;
+}
+
+.icons {
+   display: inline-block;  
+   margin-top: 0px;
+   margin-left: 0px;
+   padding-left: 0px;
+   margin-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    }
+
+
+
+    /* <!-- My UX Skills section coded using CSS flex --> */
+
+.mySkills {
+    display: block;
+    width: 100%;
+    padding-top: 60px;
+    margin-top: 800px;
+    padding-bottom: 220px;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+#specialties {
+    color:#08487D;
+    display: in-line block;
+    padding-top: 40px;
+    margin-top: 160px;
+    margin-left: 142px;
+}
+
+.flexContainer {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-left: -160px;
+    flex-wrap: wrap;
+    }
+
+
+#flexRow {
+    background-color: #f7f7f7;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.skillsFlex {
+    width: 30%;
+    padding: 64px;
+    margin-left: 100px;
+    margin-right: -280px;
+    justify-content: space-around;
+    }
+
+.skillsIcon {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin-left: 300px;
+    margin-right: -100px;
+    margin-top: -40px;
+}
+
+.myWork {
+    display: block;
+    width: 100%;
+}
+
+.specialtyCategories {
+    width: 400px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.skillsDetail {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14pt; 
+    line-height: 150%;
+    margin-top: 30px;
+    margin-left: 142px;
+    margin-right: 142px;
+    color: #575757;  
+    width: 400px;
+}
+
+/* <!-- My Work Section Constructed using CSS Grid --> */
+.workHeader {
+    background-color: #08487D;
+    color: #f7f7f7;
+    height: 200px;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 142px;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.workGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 55% 30%;
+    grid-template-rows: .1fr .1fr;
+    grid-template-areas:
+    "topRow topRow"
+    "leftSidebar rightContent"
+    ;
+
+}
+
+.topRow {
+    grid-area: topRow;
+}
+
+.leftSidebar {
+    grid-area: leftSidebar;
+    background-color: #575757;
+    align-content: center;
+}
+
+.rightContent {
+    grid-area: rightContent;
+    background-color: #575757;
+    align-content: start;
+    padding-top: 80px;
+}
+
+#petFriendly {
+    color: #f7f7f7;
+    align-content: start;
+    margin-top: 20px;
+}
+
+.learnMore {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+    color: #f7f7f7;
+    background-color: #0072D0; 
+    height: 60px;
+    width: 180px;
+    border-color: #f7f7f7;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    margin-top: -20px;
+    margin-left: 180px;
+    margin-right: 0px;
+}
+
+#diHeading {
+    color: #f7f7f7;
+}
+
+.workGrid2 {
+    display: grid;
+    grid-template-columns: 60% 25%;
+    grid-template-rows: .1fr .1fr;
+    grid-template-areas:
+    "topRow2 topRow2"
+    "leftSidebar2 rightContent2"
+    ;
+}
+
+.topRow2 {
+    grid-area: topRow2;
+}    
+
+.leftSidebar2 {
+    grid-area: leftSidebar2;
+    background-color: #575757;
+    align-content: center;
+}
+
+.rightContent2 {
+    grid-area: rightContent2;
+    background-color: #575757;
+    align-content: end;
+    padding-top: 80px;
+}
+
+.workGrid3 {
+    display: grid;
+    grid-template-columns: 60% 25%;
+    grid-template-rows: .1fr .1fr;
+    grid-template-areas:
+    "topRow3 topRow3"
+    "leftSidebar3 rightContent3"
+    ;
+}
+
+.topRow3 {
+    grid-area: topRow3;
+}
+
+.leftSidebar3 {
+    grid-area: leftSidebar3;
+    background-color: #575757;
+    align-content: center;
+    margin-bottom: 0px;
+}
+
+.rightContent3 {
+    grid-area: rightContent3;
+    background-color: #575757;
+    align-content: end;
+    padding-top: 80px;
+    margin-bottom: 0px;
+}
+
+#ffHeading {
+    color: #f7f7f7;
+}
+
+a {
+    margin-top: 0px;
+    color: #f7f7f7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Mobile Media Query */
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 100px;
+        display: block;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #f7f7f7;
+    }
+
+    .headerNav {
+      display: none;
+    }
+
+    .inlineBlock {
+        display: none;
+    }
+
+    .flexContainer {
+        display: flex;
+        height: 300px;
+        width: 100%;
+       padding-top: 400px;
+        padding-bottom: 0px;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        }
+
+    #flexRow {
+            background-color: #f7f7f7;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    .skillsFlex {
+        width: 20%;
+        padding: 10px;
+        margin-left: 100px;
+        margin-right: -280px;
+        justify-content: space-around;
+            }
+
+    h1 {
+        font-family: 'Espresso Roast Caps', sans-serif;
+        font-size: 30pt;
+        color: #f7f7f7;
+        }        
+            
+    h2 {
+        font-family: 'Espresso Roast Script', sans-serif;
+        font-size: 26pt;
+        color: #f7f7f7;
+        margin-top: 0px;
+        }
+            
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 28pt; 
+        color: #f7f7f7;
+        display: inline-block;
+        }
+            
+    h4 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 22pt; 
+        color: #08487D;
+        display: inline-block;
+        }
+    
+    p {
+        font-family: 'Raleway', sans-serif; 
+        font-size: 12pt; 
+        line-height: 100%;
+        margin-top: 40px;
+        margin-left: 142px;
+        margin-right: 142px;
+        padding-bottom: 40px;
+        color: #f7f7f7;
+        }    
+
+    .heroImg {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+        text-align: left;
+        background-color: #0072D0;
+        display: block;
+        width: 100%;
+            }
+    
+    .aboutMe {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #025396;
+            }    
+  }
