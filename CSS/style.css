@@ -519,3 +519,13 @@ a {
         background-color: #025396;
             }    
   }
+
+  /* Smooth Scrolling */
+
+  html {
+    scroll-behavior: smooth;
+}
+
+.smooth-link {
+    text-decoration: none; 
+}
