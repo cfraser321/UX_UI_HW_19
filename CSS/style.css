@@ -1,16 +1,60 @@
-body {
-    margin: auto;
-    background-color: #0072D0;
-}
+/*Header section*/
 
 header {
+    position: fixed;
+    top: 0;
     background-color: #08487D;
-    height: 200px;
-    display: block;
+    height: 120px;
     width: 100%;
     margin: 0 !important;
     padding: 0 !important;
     color: #f7f7f7;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+#nav-bar {
+    align-self: right;
+    padding-right: 120px;
+}
+
+#navMenu {
+    list-style: none;
+    color: #f7f7f7;
+    margin-left: auto;
+    margin-right: 0 !important;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-right: 60px;
+    width: 100%;
+}
+
+.menuItem {
+    display: inline-block;
+    margin: 0px;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+/*Body*/
+body {
+    margin: auto;
+    background-color: #0072D0;
+    min-height: 100vh;
+    position: relative;
 }
 
 @font-face {
@@ -22,17 +66,15 @@ header {
 
 h1 {
     font-family: 'Espresso Roast Caps', sans-serif;
-    font-size: 62pt;
+    font-size: 50pt;
     color: #f7f7f7;
-    margin-top: 0;
-    line-height: 105%;
+    line-height: 145%;
    }
 
 h2 {
     font-family: 'Espresso Roast Script', sans-serif;
     font-size: 60pt;
     color: #f7f7f7;
-    margin-top: 0px;
     line-height: 20%;
 }
 
@@ -40,102 +82,26 @@ h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 54pt; 
     color: #f7f7f7;
-    display: inline-block;
-    margin-left: 142px;
-    margin-right: 120px;
-    margin-bottom: -20px;
 }
 
 h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 34pt; 
     color: #08487D;
-    display: inline-block;
-    margin-left: 142px;
-    margin-right: 240px;
-    margin-bottom: -20px;
-}
-
-#logo {
-    vertical-align: top;
-    margin: 0px;
-    padding-right: 10px;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 60px;
-    color: #f7f7f7;
-    width: 25%;
-   }
-
-.headerNav {
-    display: inline-block;
-    width: 100%;
-    padding-top: 0px;
-}
-
-.inlineBlock {
-    list-style: none;
-    color: #f7f7f7;
-    text-align: right;
-    
-}
-
-li {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    padding: 20px;
-    margin-right: 60px;
-    margin-top: -50px;
-    font-size: 18pt;
-}
-
-.heroImg {
-    height: 400px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 0px;
-    text-align: left;
-    background-color: #0072D0;
-    display: block;
-    width: 100%;
-    }
-
-#headShot {
-    display: inline-block;
-    width: 33%;
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 0px;
-    padding-bottom: 150px;
-}   
-
-.aboutMe {
-    display: inline-block;
-    height: 800px;
-    padding-top: 60px;
-    background-color: #025396;
-}
-
-#myName {
-    display: inline-block;
-    padding-left: 420px;
-    padding-top: 0px;
-    margin-top: -800px;
-    margin-bottom: 0px;
-    width: 66%;
 }
 
 p {
     font-family: 'Raleway', sans-serif; 
     font-size: 14pt; 
     line-height: 150%;
-    margin-top: 40px;
-    margin-left: 142px;
-    margin-right: 142px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-right: 0px;
     color: #f7f7f7;
   }
-  
-button {
+
+  button {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
@@ -153,70 +119,117 @@ button {
    align-content: right;
     }
 
+/*Hero section*/
 
-#footer {
-    display: block;
-    background-color: #08487D;
-    height: 80px;
+#hero {
+    height: 320px;
     width: 100%;
-    padding-left: 100px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-right: 60px;
-    margin-right: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    color: #f7f7f7;
+    display: flex;
+    padding-top: 130px;
+    padding-left: 60px;
+    margin: 0 auto;
+
 }
 
-ul.footerNav {
-    display: inline-block;
-    padding-top: 0px;
-    background-color: #08487D;
-    text-align: right;
-    width: 100%;
-    margin-bottom: 0;
+#headShot {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
 }
 
-.footerLi {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    margin-right: 60px;
-    font-size: 18pt;
-    margin-bottom: 0;
-}
+.flex_item {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    
+      }
 
-.icons {
-   display: inline-block;  
-   margin-top: 0px;
-   margin-left: 0px;
-   padding-left: 0px;
-   margin-right: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin-bottom: 0;
+#myName {
+        flex-direction: column;
+        padding-left: 60px;
+        padding-top: 20px;
+        margin-bottom: 0px;
+        width: 66%;
     }
 
+#hi {
+    padding-top: 20px;
+    padding-left: 40px;
+}   
 
+#uxDesign {
+    padding-left: 40px;
+}
 
-    /* <!-- My UX Skills section coded using CSS flex --> */
+/*About Me section*/
+
+#aboutMe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 40px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    background-color: #025396;
+}
+
+#aboutHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 80px;
+}
+
+#lineDrawing {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 400px;
+    margin-top: -200px;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14pt; 
+    line-height: 150%;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: auto;
+    margin-bottom: 0;
+    color: #f7f7f7;
+  }
+
+     /* <!-- My UX Skills section coded using CSS flex --> */
 
 .mySkills {
     display: block;
     width: 100%;
-    padding-top: 60px;
-    margin-top: 800px;
+    padding-top: 10px;
+    margin: 0 auto;
+    padding-right: 0px;
     padding-bottom: 220px;
     background-color: #f7f7f7;
-    width: 100%;
 }
 
 #specialties {
     color:#08487D;
     display: in-line block;
-    padding-top: 40px;
-    margin-top: 160px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     margin-left: 142px;
+    margin-right: 0px;
 }
 
 .flexContainer {
@@ -238,9 +251,11 @@ ul.footerNav {
 
 .skillsFlex {
     width: 30%;
-    padding: 64px;
-    margin-left: 100px;
-    margin-right: -280px;
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 50px;
+    margin-right: -180px;
     justify-content: space-around;
     }
 
@@ -253,15 +268,15 @@ ul.footerNav {
     margin-top: -40px;
 }
 
-.myWork {
-    display: block;
-    width: 100%;
-}
-
 .specialtyCategories {
     width: 400px;
     margin-top: 30px;
     align-items: flex-start;
+    display: inline-block;
+    margin-left: 142px;
+    margin-right: 240px;
+    margin-bottom: -20px;
+    text-align: center;
 }
 
 .skillsDetail {
@@ -276,24 +291,30 @@ ul.footerNav {
 }
 
 /* <!-- My Work Section Constructed using CSS Grid --> */
+.
+myWork {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .workHeader {
     background-color: #08487D;
     color: #f7f7f7;
-    height: 200px;
+    height: 100px;
     width: 100%;
-    margin-left: 0px;
+    margin: 0px;
     padding-left: 142px;
-    margin-top: 0px;
-    padding-top: 60px;
+    padding-right: 0px;
+    padding-top: 10px;
     padding-bottom: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
 }
 
 .workGrid {
     display: grid;
     width: 100%;
-    grid-template-columns: 55% 30%;
+    grid-template-columns: 65% 35%;
     grid-template-rows: .1fr .1fr;
     grid-template-areas:
     "topRow topRow"
@@ -315,7 +336,7 @@ ul.footerNav {
 .rightContent {
     grid-area: rightContent;
     background-color: #575757;
-    align-content: start;
+    align-content: end;
     padding-top: 80px;
 }
 
@@ -323,6 +344,7 @@ ul.footerNav {
     color: #f7f7f7;
     align-content: start;
     margin-top: 20px;
+    padding-left: 60px;
 }
 
 .learnMore {
@@ -344,6 +366,7 @@ ul.footerNav {
 
 #diHeading {
     color: #f7f7f7;
+    padding-left: 60px;
 }
 
 .workGrid2 {
@@ -404,6 +427,7 @@ ul.footerNav {
 
 #ffHeading {
     color: #f7f7f7;
+    padding-left: 60px;
 }
 
 a {
@@ -417,115 +441,233 @@ a {
     text-align: center;
 }
 
-/* Mobile Media Query */
+/* Media Queries */
 
 @media only screen and (max-width: 600px) {
     header {
-        height: 100px;
-        display: block;
-        width: 100%;
-        margin: 0 !important;
-        padding: 0 !important;
-        color: #f7f7f7;
-    }
+    height: 100px;
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #f7f7f7;
+}
 
-    .headerNav {
-      display: none;
-    }
+#nav-bar {
+    display: none;
+}
 
-    .inlineBlock {
-        display: none;
-    }
+#navMenu {
+    display: none;
+}
 
-    .flexContainer {
-        display: flex;
-        height: 300px;
-        width: 100%;
-       padding-top: 400px;
-        padding-bottom: 0px;
-        flex-wrap: wrap;
-        margin-right: 0px;
-        }
+.flexContainer {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    padding-top: 400px;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    margin-right: 0px;
+}
 
-    #flexRow {
-            background-color: #f7f7f7;
-            flex-direction: column;
-            align-items: flex-start;
-        }
+#flexRow {
+    background-color: #f7f7f7;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
-    .skillsFlex {
-        width: 20%;
-        padding: 10px;
-        margin-left: 100px;
-        margin-right: -280px;
-        justify-content: space-around;
-            }
+.skillsFlex {
+    width: 20%;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: -280px;
+    justify-content: space-around;
+}
 
-    h1 {
-        font-family: 'Espresso Roast Caps', sans-serif;
-        font-size: 30pt;
-        color: #f7f7f7;
-        }        
+h1 {
+    font-family: 'Espresso Roast Caps', sans-serif;
+    font-size: 30pt;
+    color: #f7f7f7;
+}        
             
-    h2 {
-        font-family: 'Espresso Roast Script', sans-serif;
-        font-size: 26pt;
-        color: #f7f7f7;
-        margin-top: 0px;
-        }
+h2 {
+    font-family: 'Espresso Roast Script', sans-serif;
+    font-size: 26pt;
+    color: #f7f7f7;
+    margin-top: 0px;
+}
             
-    h3 {
-        font-family: 'Raleway', sans-serif;
-        font-size: 28pt; 
-        color: #f7f7f7;
-        display: inline-block;
-        }
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28pt; 
+    color: #f7f7f7;
+    display: inline-block;
+}
             
-    h4 {
-        font-family: 'Raleway', sans-serif;
-        font-size: 22pt; 
-        color: #08487D;
-        display: inline-block;
-        }
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22pt; 
+    color: #08487D;
+    display: inline-block;
+    }
     
-    p {
-        font-family: 'Raleway', sans-serif; 
-        font-size: 12pt; 
-        line-height: 100%;
-        margin-top: 40px;
-        margin-left: 142px;
-        margin-right: 142px;
-        padding-bottom: 40px;
-        color: #f7f7f7;
-        }    
+p {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 12pt; 
+    line-height: 100%;
+    margin-top: 40px;
+    margin-left: 142px;
+    margin-right: 142px;
+    padding-bottom: 40px;
+    color: #f7f7f7;
+}    
 
-    .heroImg {
-        height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 0px;
-        text-align: left;
-        background-color: #0072D0;
-        display: block;
-        width: 100%;
-            }
+#hero {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+    background-color: #0072D0;
+    display: block;
+    width: 100%;
+}
     
-    .aboutMe {
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        padding-top: 60px;
-        padding-bottom: 60px;
+.aboutMe {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
         background-color: #025396;
             }    
   }
 
+@media only screen and (max-width: 1217px) {
+#hero {
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#hi {
+    height: 100px;
+    display: flex;
+    width: 90%;
+    line-height: 140%;
+}
+
+#uxDesign {
+    height: 100px;
+    display: flex;
+    width: 90%;
+    padding-top: 20px;
+    line-height: 140%;
+}
+}
+
   /* Smooth Scrolling */
 
-  html {
+html {
     scroll-behavior: smooth;
 }
 
 .smooth-link {
     text-decoration: none; 
+}
+
+/* Animated Button */
+.customBtn {
+    color: #f7f7f7;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+  }
+
+.btn1 {
+    background: #0072D0;
+    border-width: 2px;
+    z-index: 1;
+}
+.btn1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #FFAB40;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.btn1:hover {
+    position: absolute;
+    color: #08487D;
+    border-color: #08487D;
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 6px;
+}
+.btn1:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn1:active {
+   top: 2px;
+  }
+
+   /*Footer section*/
+
+#footer {
+    display: block;
+    background-color: #08487D;
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #f7f7f7;
+}
+
+.footerNav {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footerLi {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 0px;
+    font-size: 18pt;
+    margin-bottom: 0;
+    padding: 20px;
+    align-self: right;
+    text-align: right;
+}
+
+.icons {
+display: inline-block;  
+margin-top: 0px;
+margin-left: 0px;
+padding-left: 0px;
+margin-right: 20px;
+padding-top: 0px;
+padding-bottom: 20px;
+margin-bottom: 0;
 }

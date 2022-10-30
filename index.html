@@ -12,36 +12,52 @@
     </head> 
     <body>
         <header>
-                <div id="logo">
-                   <img src="images/cflogo.png" alt="logo with moon over mountains" width:150px height:200px>
-                </div>
-                <nav class="headerNav">
-                    <ul class="inlineBlock">
-                        <li>About</li>
-                        <li><a class="smooth-link" href="#skills">Skills</li>
-                        <li>Work</li>
-                        <li>Contact</li>
+            <div id="logo"><img src="images/cflogo.png" alt="logo with moon over mountains" height="110px;">
+            </div>
+                <div id="nav-bar">
+                    <ul id="navMenu">
+                        <li class="menuItem">
+                            <a class="nav-link" id="smooth-link1" href="#about">About</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="nav-link" id="smooth-link2" href="#skills">Skills</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="nav-link" id="smooth-link3" href="#work">Work</a>
+                        </li>
+                        <li class="menuItem">
+                            <a class="nav-link" id="smooth-link4" href="#contact">Contact</a>
+                        </li>
                     </ul>
-                </nav> 
+                </div>
+            </div>    
         </header>
-        <section class="heroImg">
-            <div id="headShot">
+        <section id="hero" class="flex">
+            <div "headShot flex-item">
                 <img src="images/headshot.png" alt="Round picture of Carolyn Fraser, blonde adult female" width: 33%>
             </div>
-            <div id="myName">
-                <h1>Hi! I'm Carolyn Fraser</h1>
-                <h2>UX/UI Designer</h2>
+            <div id="myName flex-item">
+                <h1 id="hi">Hi! I'm Carolyn Fraser</h1>
+                <h2 id="uxDesign">UX/UI Designer</h2>
             </div>
-            <div class="aboutMe">
-                <h3>About Me</h3>
+        </section> 
+        <section id="aboutMe"> 
+            <a id="about"></a>   
+            <div>
+                <h3 id="aboutHeading">About Me</h3>
+                <div class="lineDrawing">
                 <img src="images/linedrawing.png" alt="line drawing of female working on laptop with coffee" id="lineDrawing">
-                <p>I’m a UX/UI Designer based in the Rocky Mountains of Colorado. My path into the UX/UI field was a journey that took me across industries, through a variety of areas and roles, and on several scenic detours. Along the way I gained unique transferable skills and worked with many inspiring people and teams everywhere I went.
+            </div>
+            <div>
+                <p class="aboutContent">I’m a UX/UI Designer based in the Rocky Mountains of Colorado. My path into the UX/UI field was a journey that took me across industries, through a variety of areas and roles, and on several scenic detours. Along the way I gained unique transferable skills and worked with many inspiring people and teams everywhere I went.
                 </p>
-                <p>I am on track to complete my certificate in UX/UI Design through the University of Denver in November 2022. Design is an exciting adventure for me, a chance to explore and continuously learn and apply new technologies, concepts, and techniques. If there’s one thing I’ve learned so far, it’s that a great designer should never be afraid to stop and ask for directions (aka do your research, listen to the user and the client, and adjust accordingly)! It’s crucial to be open to change to make sure your design ends up in the place where both clients and users want it to be. Good thing I love to challenge myself, and I thrive in a dynamic work environment!
+                <p class="aboutContent">I am on track to complete my certificate in UX/UI Design through the University of Denver in November 2022. Design is an exciting adventure for me, a chance to explore and continuously learn and apply new technologies, concepts, and techniques. If there’s one thing I’ve learned so far, it’s that a great designer should never be afraid to stop and ask for directions (aka do your research, listen to the user and the client, and adjust accordingly)! It’s crucial to be open to change to make sure your design ends up in the place where both clients and users want it to be. Good thing I love to challenge myself, and I thrive in a dynamic work environment!
                 </p> 
-                <p>Now I’ve arrived as a designer, but the journey is far from over. Contact me to discuss how we can work together to drive towards the fork in the road where design and usability intersect.
+                <p class="aboutContent">Now I’ve arrived as a designer, but the journey is far from over. Contact me to discuss how we can work together to drive towards the fork in the road where design and usability intersect.
                 </p>
-                <button>DOWNLOAD MY RESUME</button>
+            </div>
+            <div>
+                <button class="customBtn btn1">DOWNLOAD MY RESUME</button>
             </div>
         </section>
         <section class="mySkills">
@@ -67,7 +83,8 @@
                         </p>
                     </div>
                 </section>
-        <section class=myWork>
+        <section class="myWork">
+            <a id="work"></a>   
             <div>
             <h3 class="workHeader">Work</h3>
             </div>
@@ -111,9 +128,8 @@
                 <li class="footerLi">Skills</li>
                 <li class="footerLi">Work</li>
                 <li class="footerLi">Contact</li>
-                <img src="images/linkedin.svg" alt="LinkedIn logo" class="icons" height="40px" width="auto">
-                <img src="images/emailicon.png" alt="email icon" class="icons" height="40px" width="auto">
-                <li class="footerLi><img src="images/linkedin.svg" alt="LinkedIn logo" height="40px" width="auto"></li>
+                <li class="icons"><img src="images/linkedin.svg" alt="LinkedIn logo" height="40px" width="auto"></li>
+                <li class="icons"><img src="images/emailicon.png" alt="email icon" height="40px" width="auto"></li>
             </ul>
         </footer>
     </body>  
